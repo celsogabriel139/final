@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvInsertData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira os dados"
+        android:textSize="20sp"
+        android:layout_centerInParent="true" />
+
+    <!-- Campos para preenchimento -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_below="@id/tvInsertData"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:layout_below="@id/etAge"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hobby"
+        android:layout_below="@id/etPhone"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etHobby"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:layout_below="@id/spGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
